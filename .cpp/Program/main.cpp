@@ -146,7 +146,7 @@ int main () {
                                 int srcID = max(2, static_cast<int>(to_string(v[i].getID()).length())); if (srcID % 2 == 1) srcID++;
                                 int srcName = max(4, static_cast<int>(v[i].getNama().length())); if (srcName % 2 == 1) srcName++;
                                 int srcCategory = max(8, static_cast<int>(v[i].getKategori().length())); if (srcCategory % 2 == 1) srcCategory++;
-                                int srcPrice = max(colPrice, static_cast<int>(to_string(v[i].getHarga()).length())); if (srcPrice % 2 == 0) srcPrice++;
+                                int srcPrice = max(5, static_cast<int>(to_string(v[i].getHarga()).length())); if (srcPrice % 2 == 0) srcPrice++;
                                 header (srcID, srcName, srcCategory, srcPrice); // tampilkan header
                                 printRow (v[i].getID(), v[i].getNama(), v[i].getKategori(), v[i].getHarga(), srcID, srcName, srcCategory, srcPrice); // tampilkan data
                                 footer (srcID, srcName, srcCategory, srcPrice); cout << "\n"; // tampilkan footer
