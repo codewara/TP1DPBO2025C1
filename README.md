@@ -3,13 +3,7 @@ _Saya Datuk Daneswara Raditya Samsura dengan NIM 2308224 mengerjakan Latihan Mod
 
 # Dokumentasi
 <div>
-    <a href=".cpp/Screenshots/1.png">
-        <img src=".cpp/Screenshots/1.png" style="width: 30%; object-fit: cover;">
-    </a>
-    <a href=".cpp/Screenshots/2.png">
-        <img src=".cpp/Screenshots/2.png" style="width: 30%; object-fit: cover;">
-    </a>
-    <a href=".cpp/Screenshots/3.png">
-        <img src=".cpp/Screenshots/3.png" style="width: 30%; object-fit: cover;">
-    </a>
+    <img src=".cpp/Screenshots/1.png" style="width: 30%; object-fit: cover;">
+    <img src=".cpp/Screenshots/2.png" style="width: 30%; object-fit: cover;">
+    <img src=".cpp/Screenshots/3.png" style="width: 30%; object-fit: cover;">
 </div>
