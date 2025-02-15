@@ -89,7 +89,7 @@ int main () {
                 cin >> harga;
                 sigma = Petshop (idx, nama, kategori, harga); // inisialisasi data
                 v.push_back(sigma); idx++; // tambahkan data ke vector dan increment ID
-                cout << "Data new has been added.\n\n"; // tampilkan pesan
+                cout << "A new data has been added.\n\n"; // tampilkan pesan
             }
             
             // Command "DELETE" untuk menghapus data berdasarkan ID
