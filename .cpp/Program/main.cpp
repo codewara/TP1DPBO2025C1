@@ -39,11 +39,11 @@ void header (int col1, int col2, int col3, int col4) {
     cout << " | "; for (int i = 0; i < col4 - 5; i+=2) cout << " ";
     cout << "HARGA"; for (int i = 0; i < col4 - 5; i+=2) cout << " ";
     cout << " |" << endl;
-    cout << "+-"; for (int i = 0; i < col1; i++) cout << "-";
-    cout << "-+-"; for (int i = 0; i < col2; i++) cout << "-";
-    cout << "-+-"; for (int i = 0; i < col3; i++) cout << "-";
-    cout << "-+-"; for (int i = 0; i < col4; i++) cout << "-";
-    cout << "-+" << endl;
+    cout << "+="; for (int i = 0; i < col1; i++) cout << "=";
+    cout << "=+="; for (int i = 0; i < col2; i++) cout << "=";
+    cout << "=+="; for (int i = 0; i < col3; i++) cout << "=";
+    cout << "=+="; for (int i = 0; i < col4; i++) cout << "=";
+    cout << "=+" << endl;
 }
 
 // prosedur untuk menampilkan footer
@@ -135,7 +135,7 @@ int main () {
                     }
 
                     // kondisi jika data tidak ditemukan
-                    if (!found) cout << "Data with name " << nama << " not found!\n\n";
+                    if (!found) cout << "Data with name '" << nama << "' not found!\n\n";
 
                     // kondisi jika data ditemukan
                     else {
@@ -162,14 +162,14 @@ int main () {
                 colCheck (v); // set panjang kolom
 
                 // kondisi jika data kosong
-                if (v.size () == 0) cout << "Data is empty!" << endl;
+                if (v.size () == 0) cout << "Data is empty!\n\n";
 
                 // kondisi jika data tidak kosong
                 else {
                     header (colID, colName, colCategory, colPrice); // tampilkan header
                     for (int i = 0; i < v.size(); i++) { // loop semua data dan tampilkan
                         printRow (v[i].getID(), v[i].getNama(), v[i].getKategori(), v[i].getHarga(), colID, colName, colCategory, colPrice);
-                    } footer (colID, colName, colCategory, colPrice); cout << "\n"; // tampilkan footer
+                    } footer (colID, colName, colCategory, colPrice); // tampilkan footer
                     cout << "Displaying " << v.size() << " record(s).\n\n"; // tampilkan jumlah data yang ditampilkan
                 }
             }
