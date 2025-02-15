@@ -26,47 +26,18 @@ public:
         this->harga = harga;
     }
 
-    // SETTER
-    // Setter ID
-    void setID (int ID) {
-        this->ID = ID;
-    }
+    // SETTER and GETTER
+    void setID(int ID) { this->ID = ID; }
+    int getID() const { return ID; }
 
-    // Setter Nama
-    void setNama (string nama) {
-        this->nama = nama;
-    }
+    void setNama(const string& nama) { this->nama = nama; }
+    string getNama() const { return nama; }
 
-    // Setter Kategori
-    void setKategori (string kategori) {
-        this->kategori = kategori;
-    }
+    void setKategori(const string& kategori) { this->kategori = kategori; }
+    string getKategori() const { return kategori; }
 
-    // Setter Harga
-    void setHarga (int harga) {
-        this->harga = harga;
-    }
-
-    // GETTER
-    // Getter ID
-    int getID () {
-        return ID;
-    }
-
-    // Getter Nama
-    string getNama () {
-        return nama;
-    }
-
-    // Getter Kategori
-    string getKategori () {
-        return kategori;
-    }
-
-    // Getter Harga
-    int getHarga () {
-        return harga;
-    }
+    void setHarga(int harga) { this->harga = harga; }
+    int getHarga() const { return harga; }
 
     // Destructor
     ~Petshop () { }
