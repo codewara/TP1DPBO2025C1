@@ -125,35 +125,23 @@ int main () {
 
                 // kondisi jika data tidak kosong
                 else {
-                    // cari keberadaan data berdasarkan nama
-                    bool found = false; int i = 0;
+                    int i = 0; bool found = false; // loop semua data
                     while (i < v.size()) {
-                        if (v[i].getNama() == nama) {
-                            found = true;
-                            break;
-                        } i++;
+                        if (v[i].getNama() == nama) { // jika data ditemukan
+                            found = true; // set panjang kolom
+                            int srcID = max(2, static_cast<int>(to_string(v[i].getID()).length())); if (srcID % 2 == 1) srcID++;
+                            int srcName = max(4, static_cast<int>(v[i].getNama().length())); if (srcName % 2 == 1) srcName++;
+                            int srcCategory = max(8, static_cast<int>(v[i].getKategori().length())); if (srcCategory % 2 == 1) srcCategory++;
+                            int srcPrice = max(5, static_cast<int>(to_string(v[i].getHarga()).length())); if (srcPrice % 2 == 0) srcPrice++;
+                            header (srcID, srcName, srcCategory, srcPrice); // tampilkan header
+                            printRow (v[i].getID(), v[i].getNama(), v[i].getKategori(), v[i].getHarga(), srcID, srcName, srcCategory, srcPrice); // tampilkan data
+                            footer (srcID, srcName, srcCategory, srcPrice); cout << "\n"; // tampilkan footer
+                            break; // keluar dari loop
+                        } i++; // increment
                     }
-
+                    
                     // kondisi jika data tidak ditemukan
                     if (!found) cout << "Data with name '" << nama << "' not found!\n\n";
-
-                    // kondisi jika data ditemukan
-                    else {
-                        int i = 0; // loop semua data
-                        while (i < v.size()) {
-                            if (v[i].getNama() == nama) { // jika data ditemukan
-                                // set panjang kolom
-                                int srcID = max(2, static_cast<int>(to_string(v[i].getID()).length())); if (srcID % 2 == 1) srcID++;
-                                int srcName = max(4, static_cast<int>(v[i].getNama().length())); if (srcName % 2 == 1) srcName++;
-                                int srcCategory = max(8, static_cast<int>(v[i].getKategori().length())); if (srcCategory % 2 == 1) srcCategory++;
-                                int srcPrice = max(5, static_cast<int>(to_string(v[i].getHarga()).length())); if (srcPrice % 2 == 0) srcPrice++;
-                                header (srcID, srcName, srcCategory, srcPrice); // tampilkan header
-                                printRow (v[i].getID(), v[i].getNama(), v[i].getKategori(), v[i].getHarga(), srcID, srcName, srcCategory, srcPrice); // tampilkan data
-                                footer (srcID, srcName, srcCategory, srcPrice); cout << "\n"; // tampilkan footer
-                                break; // keluar dari loop
-                            } i++; // increment
-                        }
-                    }
                 }
             }
             
