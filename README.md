@@ -71,3 +71,5 @@ Catatan:
 - Command `SHOW` akan otomatis dijalankan (tabel akan di-refresh) setelah setiap command lain dijalankan,
 - Foto hanya bisa menggunakan asset yang ada pada __list gambar__,
 - Gambar hanya dapat diubah, ditambahkan, dan dihapus __di luar dari program__
+
+https://github.com/user-attachments/assets/257faaae-d35c-4ea0-9402-7109cec18c6a
